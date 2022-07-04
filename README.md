@@ -1,7 +1,19 @@
 <details>
 <summary>Click to expand</summary>
 
-[[_TOC_]]
+- [TL;DR](#tldr)
+- [Installing/Building](#installingbuilding)
+  - [Packages](#packages)
+  - [Docker](#docker)
+    - [Arch Linux](#arch-linux)
+    - [get-docker](#get-docker)
+    - [Development](#development)
+  - [Manual](#manual)
+- [Fuzzing](#fuzzing)
+  - [Risks](#risks)
+  - [Introduction](#introduction)
+- [Using](#using)
+- [Gallery](#gallery)
 
 </details>
 
