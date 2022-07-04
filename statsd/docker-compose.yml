@@ -1,0 +1,42 @@
+# See https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/rpc_statsd.md#installing-and-setting-up-statsd-prometheus-and-grafana
+version: '3'
+
+networks:
+  statsd-net:
+    driver: bridge
+
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/prometheus.yml
+    command:
+      - '--config.file=/prometheus.yml'
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    networks:
+      - statsd-net
+
+  statsd_exporter:
+    image: prom/statsd-exporter
+    container_name: statsd_exporter
+    volumes:
+      - ./statsd_mapping.yml:/statsd_mapping.yml
+    command:
+      - "--statsd.mapping-config=/statsd_mapping.yml"
+    ports:
+      - "9102:9102/tcp"
+      - "8125:9125/udp"
+    networks:
+      - statsd-net
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+        - "3000:3000"
+    networks:
+      - statsd-net

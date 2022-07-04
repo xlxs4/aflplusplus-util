@@ -1,0 +1,16 @@
+# Cmake/Make stuff generated upon instrumentation.
+# Generated in instrument.sh and build-cov.sh
+build
+build-cov
+# Output directory of the fuzzer instances.
+# Generated in fuzz.sh
+findings
+# Output directory of afl-tmin.
+# Generated in tmin.sh
+minimized
+# Output database of cwtriage.
+# Generated in triage.sh
+crashwalk.db
+# Output summary of cwdump.
+# Generated in triage.sh
+triage
