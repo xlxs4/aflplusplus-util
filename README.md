@@ -175,9 +175,9 @@ Since fuzzing is based on cycling, it is an iterative process at heart. This con
 
 For more info, go over the [docs/](https://github.com/AFLplusplus/AFLplusplus/tree/stable/docs) in AFL++'s repository, read the rest of the README, and the documentation in each script in the `aflplusplus` folder.
 
-For even more info, I suggest first going over the original AFL whitepaper, found [here](https://lcamtuf.coredump.cx/afl/technical_details.txt), and then the AFL++ publication, found [here](https://aflplus.plus/papers/aflpp-woot2020.pdf) \[1\]
+For even more info, I suggest first going over the original AFL whitepaper, found [here](https://lcamtuf.coredump.cx/afl/technical_details.txt), and then the AFL++ publication, found [here](https://aflplus.plus/papers/aflpp-woot2020.pdf). [^1]
 
-\[1\]: Fioraldi, A., Maier, D., Eißfeldt, H., & Heuse, M. (2020). {AFL++}: Combining Incremental Steps of Fuzzing Research. In 14th USENIX Workshop on Offensive Technologies (WOOT 20).
+[^1]: Fioraldi, A., Maier, D., Eißfeldt, H., & Heuse, M. (2020). {AFL++}: Combining Incremental Steps of Fuzzing Research. In 14th USENIX Workshop on Offensive Technologies (WOOT 20).
 
 </details>
 
