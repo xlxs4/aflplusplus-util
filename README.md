@@ -195,7 +195,7 @@ Assuming you can use `afl-clang-lto` and the like, and that you are inside `aflp
    
    The script also sets various environment variables to configure AFL++, for example mode, instrumentation strategy, sanitizer (optional). Then, it instruments the code and builds the instrumented executable. You can edit it to directly affect how AFL++ is configured.
 
-3. `/.scripts/build-cov.sh`
+3. `./scripts/build-cov.sh`
 
    This creates a spare copy of the project sources, and compiles the copy with gcov profiling support, as per the [GitHub README](https://github.com/mrash/afl-cov#workflow).
 4.  `./scripts/launch-screen.sh`
